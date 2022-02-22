@@ -21,6 +21,21 @@ function App() {
           액티비티의 천국
         </header>
       </section>
+      <div className="map">
+        <img className="mapImg" src="col.png" alt="콜롬비아"/>
+        <label classNames="cartagena">
+          <img className="pin" src="pin.png"/>
+        </label>
+        <label classNames="medellin">
+          <img className="pin" src="pin.png"/>
+        </label>
+        <label classNames="sangil">
+          <img className="pin" src="pin.png"/>
+        </label>
+        <label classNames="bogota">
+          <img className="pin" src="pin.png"/>
+        </label>
+      </div>
     </div>
   );
 }

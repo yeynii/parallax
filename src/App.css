@@ -17,7 +17,8 @@
     transform:translateY(-50%);
     text-align: center;
     background-color: rgba(0, 0, 0, 0.1);
-    padding: 10px
+    padding: 10px;
+    position: sticky;
 }
 
 .scene h1{
@@ -46,4 +47,48 @@
 
 .scene.three{
     background-image:url(/public/sangil.jpeg);
+}
+
+.map{
+    position: fixed;
+    right:20px;
+    bottom: 20px;
+    opacity: 100%;
+}
+
+.mapImg{
+    width: 300px;
+}
+
+.cartagena, .medellin, .sangil, .bogo{
+    position: absolute;
+    z-index: 2;
+}
+
+.cartagena.pin{
+    position: absolute;
+    top:20px;
+    left:80px;
+    width: 30px;
+    height: 30px;
+}
+
+.cartagena diagonal{
+    width: 5px;
+    height: 50px;
+    background-color: red;
+    transform: rotate(10deg);
+}
+
+.medellin.pin{
+    top:120px;
+    left:70px;
+}
+.sangil.pin{
+    top:110px;
+    left:120px;
+}
+.bogota.pin{
+    top:160px;
+    left:110px;
 }
