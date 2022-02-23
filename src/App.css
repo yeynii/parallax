@@ -48,6 +48,10 @@
     background-image:url(/public/sangil.jpeg);
 }
 
+.scene.four{
+    background-image:url(/public/bogota.jpeg);
+}
+
 .map{
     position: fixed;
     right:20px;
@@ -62,13 +66,14 @@
 
 .cartagena, .medellin, .sangil, .bogota{
     position: absolute;
+    width: 100%
 }
 
 .pin{
     position: absolute;
     width: 30px;
     height: 30px;
-
+    z-index: 2;
 }
 
 .cartagena{
@@ -89,6 +94,9 @@
     left:110px;
 }
 
+.diagonal{
+    z-index: 4;
+}
 .cartagena .diagonal{
     position: absolute;
     top:30px;
@@ -96,23 +104,15 @@
     width: 0;
     height: 90px;
     transform: rotate(5deg);
-    border: 2px dashed red;
-    z-index: 2;
-}
-
-.diagonal .fill{
-
 }
 
 .medellin .diagonal{
     position: absolute;
-    top:-3px;
+    top:0px;
     left: 39px;
     width: 0;
     height: 48px;
-    transform: rotate(80deg);
-    border: 2px dashed red;
-    z-index: 2;
+    transform: rotate(-100deg);
 }
 
 .sangil .diagonal{
@@ -122,6 +122,21 @@
     width: 0;
     height: 48px;
     transform: rotate(10deg);
+}
+
+.diagonal .fill{
     border: 2px dashed red;
-    z-index: 2;
+    height: 0%;
+}
+
+.placeName{
+    position: absolute;
+    bottom: -50px;
+    color: white;
+    background-color: black;
+    z-index: 3;
+    font-size: 12px;
+    font-weight: bold;
+    padding:2px;
+    border-radius: 4px;
 }
