@@ -1,6 +1,7 @@
 .App {
     margin:0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Gowun Dodum', sans-serif;
+
 }
 
 .scene{
@@ -25,6 +26,8 @@
     color: white;
     margin:0 auto;
     text-align: center;
+    font-family: 'Courgette', cursive;
+    font-weight: 200;
 }
 
 .scene h1:after{

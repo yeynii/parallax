@@ -20,19 +20,19 @@ function App() {
         </section>
         <section className="scene two">
           <header>
-            <h1>Medellin</h1>
+            <h1>Medellín</h1>
             붉은 벽돌집의 아룸다움이 있는 도시
           </header>
         </section>
         <section className="scene three">
           <header>
-            <h1>San gil</h1>
+            <h1>San Gil</h1>
             액티비티의 천국
           </header>
         </section>
         <section className="scene four">
           <header>
-            <h1>Bogota</h1>
+            <h1>Bogotá</h1>
             콜롬비아의 수도
           </header>
         </section>
