@@ -9,6 +9,7 @@
     display: block;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 .scene header{
@@ -39,12 +40,12 @@
 }
 
 .scene.one{
-    background-image:url(/public/cartagena.jpeg);
+    background-image: url(/public/cartagena.jpeg)
 
 }
 
 .scene.two{
-    background-image:url(/public/medellin.jpeg);
+    background-image: url(/public/medellin.jpeg)
 }
 
 .scene.three{
@@ -126,7 +127,7 @@
 }
 
 .diagonal .fill{
-    border: 1.5px dashed red;
+    border: 1px dashed red;
     height: 0%;
 }
 
@@ -200,3 +201,59 @@
         height: 28px;
     }
 }
+/*
+
+@media screen and (max-width: 576px){
+    .mapImg{
+        width: 150px;
+    }
+    .cartagena, .sangil, .bogota, .medellin{
+        transform: translate(-15%, -30%);
+    }
+    .pin{
+        width: 15px;
+        height: 15px;
+    }
+    .placeName{
+        bottom: -42px;
+        left:-10px;
+    }
+    .cartagena{
+        top:10px;
+        left:60px;
+    }
+    .medellin{
+        top:70px;
+        left:60px;
+    }
+    .sangil{
+        top:65px;
+        left:85px;
+    }
+    .bogota{
+        top:90px;
+        left:75px;
+    }
+
+    .sangil .placeName{
+        transform: translate(32px,-20px);
+    }
+
+    .cartagena .diagonal{
+        top:20px;
+        left: 5px;
+        height: 65px;
+    }
+
+    .medellin .diagonal{
+        top:0px;
+        left: 25px;
+        height: 35px;
+    }
+
+    .sangil .diagonal{
+        top:18px;
+        left: 3px;
+        height: 28px;
+    }
+}*/
