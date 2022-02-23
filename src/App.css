@@ -59,20 +59,21 @@
     opacity: 100%;
 }
 
-
 .mapImg{
     width: 300px;
+    opacity: 0.8;
 }
 
 .cartagena, .medellin, .sangil, .bogota{
     position: absolute;
-    width: 100%
+    width: 100%;
+    cursor: pointer;
 }
 
 .pin{
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     z-index: 2;
 }
 
@@ -94,22 +95,19 @@
     left:110px;
 }
 
-.diagonal{
-    z-index: 4;
-}
 .cartagena .diagonal{
     position: absolute;
-    top:30px;
-    left: 8px;
+    top:25px;
+    left: 6px;
     width: 0;
-    height: 90px;
+    height: 95px;
     transform: rotate(5deg);
 }
 
 .medellin .diagonal{
     position: absolute;
-    top:0px;
-    left: 39px;
+    top:-3px;
+    left: 35px;
     width: 0;
     height: 48px;
     transform: rotate(-100deg);
@@ -117,26 +115,85 @@
 
 .sangil .diagonal{
     position: absolute;
-    top:29px;
-    left: 8px;
+    top:20px;
+    left: 5px;
     width: 0;
-    height: 48px;
-    transform: rotate(10deg);
+    height: 50px;
+    transform: rotate(13deg);
 }
 
 .diagonal .fill{
-    border: 2px dashed red;
+    border: 1.5px dashed red;
     height: 0%;
 }
 
 .placeName{
     position: absolute;
-    bottom: -50px;
-    color: white;
-    background-color: black;
+    bottom: -45px;
+    color: black;
     z-index: 3;
     font-size: 12px;
     font-weight: bold;
-    padding:2px;
+    padding:1px 3px;
     border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.31)
+}
+
+.sangil .placeName{
+    transform: translate(25px,-20px);
+}
+
+@media screen and (max-width: 768px){
+    .mapImg{
+        width: 200px;
+    }
+    .cartagena, .sangil, .bogota, .medellin{
+        transform: translate(-15%, -30%);
+    }
+    .pin{
+        width: 20px;
+        height: 20px;
+    }
+    .placeName{
+        bottom: -42px;
+        left:-10px;
+    }
+    .cartagena{
+        top:18px;
+        left:80px;
+    }
+    .medellin{
+        top:90px;
+        left:75px;
+    }
+    .sangil{
+        top:85px;
+        left:110px;
+    }
+    .bogota{
+        top:115px;
+        left:100px;
+    }
+
+    .sangil .placeName{
+        transform: translate(32px,-20px);
+    }
+
+    .cartagena .diagonal{
+        top:20px;
+        left: 5px;
+        height: 65px;
+    }
+
+    .medellin .diagonal{
+        top:0px;
+        left: 25px;
+        height: 35px;
+    }
+
+    .sangil .diagonal{
+        top:18px;
+        left: 3px;
+        height: 28px;
+    }
 }

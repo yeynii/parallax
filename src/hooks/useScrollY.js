@@ -15,6 +15,6 @@ export function useScrollY() {
   });
 
   return {
-    scrollY, setScrollY
+    scrollY
   };
 }
